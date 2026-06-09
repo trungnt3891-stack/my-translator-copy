@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "MyTranslator",
-  "version": "0.7.2",
-  "identifier": "com.personal.translator",
+  "productName": "ProSports interpreter",
+  "version": "1.0.0",
+  "identifier": "com.prosports.interpreter",
   "build": {
     "frontendDist": "../src"
   },
@@ -12,11 +12,11 @@
     "windows": [
       {
         "label": "main",
-        "title": "My Translator",
-        "width": 900,
-        "height": 500,
+        "title": "ProSports interpreter",
+        "width": 1000,
+        "height": 600,
         "minWidth": 820,
-        "minHeight": 240,
+        "minHeight": 400,
         "center": true,
         "transparent": false,
         "decorations": false,
@@ -24,38 +24,6 @@
         "resizable": true,
         "skipTaskbar": false
       }
-    ],
-    "security": {
-      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' ipc://localhost wss: https:; img-src 'self' data:"
-    }
-  },
-  "bundle": {
-    "active": true,
-    "targets": "all",
-    "resources": {
-      "../scripts/*": "scripts/"
-    },
-    "icon": [
-      "icons/32x32.png",
-      "icons/128x128.png",
-      "icons/128x128@2x.png",
-      "icons/icon.icns",
-      "icons/icon.ico"
-    ],
-    "macOS": {
-      "entitlements": "Entitlements.plist",
-      "frameworks": [],
-      "minimumSystemVersion": "13.0",
-      "signingIdentity": "Developer ID Application: Trong Phuc Nguyen (75EN938B6L)"
-    },
-    "createUpdaterArtifacts": true
-  },
-  "plugins": {
-    "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDQ1MkNFMzAxRUQ2QUY2OEMKUldTTTltcnRBZU1zUmJrb1VIaExodVBLb2JnSjlmL25neWttRlI4clYzSlhPMG1Vd2RQS2ZkNkwK",
-      "endpoints": [
-        "https://github.com/phuc-nt/my-translator/releases/latest/download/latest.json"
-      ]
-    }
+    ]
   }
 }
